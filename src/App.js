@@ -6,8 +6,8 @@ import TopNavBar from "./components/TopNavBar";
 import Page1 from "./pages/Page1"
 import Page2 from "./pages/Page2"
 import MyDataTable from "./pages/datatable/MyDataTable"
-import FormExample1 from "./pages/FormExample1"
-import FormExample2 from "./pages/FormExample2"
+import FormExample1 from "./pages/form/FormExample1"
+import FormExample2 from "./pages/form/FormExample2"
 
 
 function App() {

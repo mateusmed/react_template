@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd885aa7-8cce-461b-bb79-baa495b06544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/FormExample1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/FormExample2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/database.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FormExample1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/form/FormExample1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FormExample2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/form/FormExample2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
       <recent name="C:\dev\workspaceMateus\react_template\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaceMateus\react_template\src\pages\form" />
       <recent name="C:\dev\workspaceMateus\react_template\src\pages\datatable" />
     </key>
   </component>
@@ -58,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612469662948</updated>
-      <workItem from="1612469664419" duration="12904000" />
+      <workItem from="1612469664419" duration="17417000" />
     </task>
     <servers />
   </component>
@@ -69,10 +73,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/FormExample2.js</url>
+          <url>file://$PROJECT_DIR$/src/pages/form/FormExample2.js</url>
           <line>1</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/database/service.js</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
