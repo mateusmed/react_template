@@ -15,12 +15,14 @@ function TopNavBar() {
                     <Nav.Link href="/home">Home</Nav.Link>
                     <Nav.Link href="/link">Link</Nav.Link>
                     <Nav.Link href="/datatable">DataTable</Nav.Link>
+                    <Nav.Link href="/formExample1">FormExample1</Nav.Link>
+                    <Nav.Link href="/formExample2">FormExample2</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/action">Action</NavDropdown.Item>
                         <NavDropdown.Item href="/anotherAction">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Item href="/something">Something</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        <NavDropdown.Item href="/separatedLink">Separated link</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Form inline>

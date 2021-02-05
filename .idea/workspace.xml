@@ -2,61 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd885aa7-8cce-461b-bb79-baa495b06544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/nucleo-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/nucleo-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/nucleo-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/nucleo-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/nucleo-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_bootstrap-switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_chartist.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_checkbox-radio-switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_footers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_misc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_navbars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_partial-nucleo-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_sidebar-and-main-panel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_chartist.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_labels.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_morphing-buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_navbars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_social-buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_transparency.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/mixins/_vendor-prefixes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/plugins/_animate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbd/plugins/_datetime-picker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbdr/_sidebar-and-main-panel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbdr/plugins/_react-notification-alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/lbdr/react-differences.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopNavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Page2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/datatable/MyDataTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/datatable/MySearchOnDataTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FormExample1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FormExample2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaceMateus\react_template\src\pages" />
       <recent name="C:\dev\workspaceMateus\react_template\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -107,11 +58,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612469662948</updated>
-      <workItem from="1612469664419" duration="8263000" />
+      <workItem from="1612469664419" duration="12904000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/FormExample2.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
