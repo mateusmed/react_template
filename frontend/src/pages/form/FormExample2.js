@@ -2,6 +2,9 @@
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 import {useState} from "react";
 
+// import {saveOrUpdate} from "../../database/service";
+
+
 
 function FormExample2() {
 
@@ -11,6 +14,9 @@ function FormExample2() {
         event.preventDefault()
         const formData = new FormData(event.target);
         let formDataObj = Object.fromEntries(formData.entries())
+
+        // saveOrUpdate(formDataObj)
+
         setFormData(formDataObj);
     }
 
