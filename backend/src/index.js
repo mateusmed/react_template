@@ -18,7 +18,10 @@ server.use(fileUpload({
 }));
 
 server.use(cors());
-// server.use(bodyParser.json());
+server.use(express.json());
+
+
+
 // server.use(bodyParser.urlencoded({extended: true}));
 
 
@@ -27,7 +30,9 @@ server.listen(8080, () => {
 });
 
 
-server.get("/item", (req,res) => {
+server.get("/item", (req,
+                     res) => {
+
     let content = db.list();
     console.log(content);
 
@@ -35,9 +40,13 @@ server.get("/item", (req,res) => {
 });
 
 
-server.post("/item", (req,res) => {
+server.post("/item", (req,
+                                   res) => {
 
-  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+    let item = req.body;
+    db.saveOrUpdate(item)
+
+    res.json(item);
 });
 
 

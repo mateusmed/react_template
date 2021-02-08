@@ -4,7 +4,6 @@ class Api{
 
     async getItens(){
 
-        // Simple GET request using fetch
         let response = await fetch('http://localhost:8080/item')
 
         if(response.ok){
