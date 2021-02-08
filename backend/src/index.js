@@ -43,7 +43,7 @@ server.post("/item", (req,res) => {
 
 
 
-server.post('/upload-avatar', async (req,
+server.post('/upload', async (req,
                                                   res) => {
 
     console.log("---> upload-avatar");

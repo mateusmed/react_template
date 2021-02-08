@@ -1,5 +1,5 @@
 
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Alert } from "react-bootstrap";
 import {useState} from "react";
 
 function UploadFile() {
@@ -27,7 +27,7 @@ function UploadFile() {
         data.append('myFile', file)
         data.append('user', 'hubot')
 
-        let  response = await fetch('http://localhost:8080/upload-avatar', {
+        let  response = await fetch('http://localhost:8080/upload', {
             method: 'POST',
             body: data
         })
