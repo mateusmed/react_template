@@ -42,8 +42,6 @@ export default function SelectSearchTopReverse() {
     return (
         <div style={{margin: "30px"}}>
 
-            {JSON.stringify(datatable)}
-
             <MDBDataTableV5
                 hover
                 entriesOptions={[5, 20, 25]}

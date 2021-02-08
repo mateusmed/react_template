@@ -21,6 +21,8 @@ function TopNavBar() {
                     <Nav.Link href="/formExample2">FormExample2</Nav.Link>
                     <Nav.Link href="/consumeApi">consumeApi</Nav.Link>
                     <Nav.Link href="/uploadFile">uplodaFile</Nav.Link>
+                    <Nav.Link href="/datatableCreateEdit">datatableCreateEdit</Nav.Link>
+                    <Nav.Link href="/anotherTable">anotherTable</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/action">Action</NavDropdown.Item>
                         <NavDropdown.Item href="/anotherAction">Another action</NavDropdown.Item>

@@ -1,5 +1,5 @@
 
-import './App.css';
+
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import TopNavBar from "./components/TopNavBar";
@@ -10,6 +10,9 @@ import FormExample1 from "./pages/form/FormExample1"
 import FormExample2 from "./pages/form/FormExample2"
 import ConsumeApi from "./pages/ConsumeApi";
 import UploadFile from "./pages/form/UploadFile";
+
+import MyDataTableCreateEdit from "./pages/datatable/tableCreateEdit/MyDataTableCreateEdit";
+import AnotherTable from "./pages/datatable/AnotherTable";
 
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
               <Route path={'/formExample2'} exact component={FormExample2}/>
               <Route path={'/consumeApi'} exact component={ConsumeApi}/>
               <Route path={'/uploadFile'} exact component={UploadFile}/>
+              <Route path={'/datatableCreateEdit'} exact component={MyDataTableCreateEdit}/>
+              <Route path={'/anotherTable'} exact component={AnotherTable}/>
           </Switch>
       </Router>
   );

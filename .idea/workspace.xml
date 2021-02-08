@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd885aa7-8cce-461b-bb79-baa495b06544" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/AnotherTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/MyDataTableCreateEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/database/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TopNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TopNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/datatable/MyDataTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/MyDataTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Users\MateusMedeirosdosSan\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.5981.135\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -48,10 +56,11 @@
       <recent name="C:\dev\workspaceMateus\react_template\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaceMateus\react_template\frontend\src\pages\datatable\tableCreateEdit" />
+      <recent name="C:\dev\workspaceMateus\react_template\frontend\src\pages\datatable" />
       <recent name="C:\dev\workspaceMateus\react_template\backend\src" />
       <recent name="C:\dev\workspaceMateus\react_template\frontend" />
       <recent name="C:\dev\workspaceMateus\react_template\src\pages\form" />
-      <recent name="C:\dev\workspaceMateus\react_template\src\pages\datatable" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,7 +73,7 @@
       <updated>1612469662948</updated>
       <workItem from="1612469664419" duration="28567000" />
       <workItem from="1612741400047" duration="5508000" />
-      <workItem from="1612791241080" duration="6774000" />
+      <workItem from="1612791241080" duration="21467000" />
     </task>
     <servers />
   </component>
