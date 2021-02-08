@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import MaterialTable from "material-table";
 
 // import axios from "axios"
-// import {Modal, TextField, Button} from '@material-ui/core';
-// import {makeStyles} from '@material-ui/core/styles';
+import {Modal, TextField, Button} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
 
 import './Style.css';
 
@@ -15,6 +15,27 @@ const api = new Api();
 function MyDataTableCreateEdit() {
 
     const [rows, setRows] = useState();
+
+    const useStyles = makeStyles((theme) => ({
+        modal: {
+            position: 'absolute',
+            width: 400,
+            backgroundColor: theme.palette.background.paper,
+            border: '2px solid #000',
+            boxShadow: theme.shadows[5],
+            padding: theme.spacing(2, 4, 3),
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)'
+        },
+        iconos:{
+            cursor: 'pointer'
+        },
+        inputMaterial:{
+            width: '100%'
+        }
+    }));
+
 
     const columns = [
         {
@@ -55,7 +76,8 @@ function MyDataTableCreateEdit() {
     }
 
     return (
-        <div className="App">
+
+        <div style={{margin: "30px"}}>
             <br />
 
             {JSON.stringify(rows)}
@@ -88,8 +110,23 @@ function MyDataTableCreateEdit() {
                 }}
             />
 
+
+            {/* init modal */}
+            {/*<Modal open={true}*/}
+            {/*       onClose={false}>*/}
+            {/*    <div className={useStyles.modal}>*/}
+            {/*        <h1>msg </h1>*/}
+
+            {/*    </div>*/}
+            {/*</Modal>*/}
+
         </div>
     );
+
+
+
+
+
 }
 
 export default MyDataTableCreateEdit;
