@@ -9,6 +9,7 @@ import MyDataTable from "./pages/datatable/MyDataTable"
 import FormExample1 from "./pages/form/FormExample1"
 import FormExample2 from "./pages/form/FormExample2"
 import ConsumeApi from "./pages/ConsumeApi";
+import UploadFile from "./pages/form/UploadFile";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path={'/formExample1'} exact component={FormExample1}/>
               <Route path={'/formExample2'} exact component={FormExample2}/>
               <Route path={'/consumeApi'} exact component={ConsumeApi}/>
+              <Route path={'/uploadFile'} exact component={UploadFile}/>
           </Switch>
       </Router>
   );

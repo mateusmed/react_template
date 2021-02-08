@@ -6,6 +6,8 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-boots
 
 function TopNavBar() {
 
+
+
     return (
         <Navbar bg="light" expand="lg">
             <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
@@ -17,7 +19,8 @@ function TopNavBar() {
                     <Nav.Link href="/datatable">DataTable</Nav.Link>
                     <Nav.Link href="/formExample1">FormExample1</Nav.Link>
                     <Nav.Link href="/formExample2">FormExample2</Nav.Link>
-                    <Nav.Link href="/consumeApi">FormExample2</Nav.Link>
+                    <Nav.Link href="/consumeApi">consumeApi</Nav.Link>
+                    <Nav.Link href="/uploadFile">uplodaFile</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/action">Action</NavDropdown.Item>
                         <NavDropdown.Item href="/anotherAction">Another action</NavDropdown.Item>
