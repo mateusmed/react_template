@@ -5,7 +5,7 @@ class Api{
     async getItens(){
 
         // Simple GET request using fetch
-        let response = await fetch('https://api.npms.io/v2/search?q=react')
+        let response = await fetch('http://localhost:8080/item')
 
         if(response.ok){
             let content = await response.json();

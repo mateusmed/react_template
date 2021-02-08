@@ -45,29 +45,38 @@ server.post("/item", (req,res) => {
 
 server.post('/upload-avatar', async (req,
                                                   res) => {
+
+    console.log("---> upload-avatar");
+
     try {
         if(!req.files) {
+
+            console.log("---> arquivo NÃO recebido");
+
             res.send({
                 status: false,
                 message: 'No file uploaded'
             });
         } else {
-            //Use the name of the input field (i.e. "avatar") to retrieve the uploaded file
-            let avatar = req.files.avatar;
 
-            console.log(avatar);
+            console.log("---> arquivo recebido");
+
+            //Use the name of the input field (i.e. "avatar") to retrieve the uploaded file
+            let myFile = req.files.myFile;
+
+            console.log(myFile);
 
             //Use the mv() method to place the file in upload directory (i.e. "uploads")
-            avatar.mv('./uploads/' + avatar.name);
+            myFile.mv('./uploads/' + myFile.name);
 
             //send response
             res.send({
                 status: true,
                 message: 'File is uploaded',
                 data: {
-                    name: avatar.name,
-                    mimetype: avatar.mimetype,
-                    size: avatar.size
+                    name: myFile.name,
+                    mimetype: myFile.mimetype,
+                    size: myFile.size
                 }
             });
         }
