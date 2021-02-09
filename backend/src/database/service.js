@@ -1,6 +1,9 @@
 import low from 'lowdb'
 import FileSync from 'lowdb/adapters/FileSync.js'
 
+import generateId from 'generate-unique-id';
+
+
 const adapter = new FileSync('./database/database.json')
 const db = low(adapter)
 
@@ -10,18 +13,28 @@ const table = "item";
 
 
 function save(item){
+
+    item["id"] = generateId();
+
+    let search = { id: item.id };
+
     db.get(table)
-        .push(item)
-        .write()
+            .push(item)
+            .write()
+
+    return db.get(table).find(search).value();
 }
 
 function update(item){
 
     let search = { id: item.id };
 
-    db.get(table).find(search)
-        .assign(item)
+    let find = db.get(table).find(search)
+
+    find.assign(item)
         .write()
+
+    return find.value();
 }
 
 class DatabaseService{
@@ -33,13 +46,20 @@ class DatabaseService{
 
     saveOrUpdate(item){
 
-        let search = { id: item.id };
+        if(item.id !== undefined){
 
-        let find = db.get(table).find(search);
+            let search = { id: item.id };
 
-        if(JSON.stringify(find)){
-            console.log("encontrado");
-            return update(item);
+            let find =  db.get(table).find(search);
+
+            if(JSON.stringify(find)){
+                console.log("encontrado");
+                return update(item);
+            }
+
+            return {
+                "message": "id not found"
+            }
         }
 
         return save(item)

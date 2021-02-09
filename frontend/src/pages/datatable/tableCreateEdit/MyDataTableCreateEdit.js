@@ -14,6 +14,8 @@ import {Button} from "react-bootstrap";
 const api = new Api();
 
 
+// icones: https://material.io/resources/icons/?icon=check_circle_outline&style=baseline
+
 // informação importante para experiencia.
 // não importa quantos componentes 'filhos' vc tiver,
 // a forma mais inteligente de se fazer isso
@@ -53,23 +55,24 @@ function MyDataTableCreateEdit() {
 
         setSelectedRow(newData);
 
-        console.log("updateName -> ", selectedRow);
+        console.log("updateNameState -> ", selectedRow);
     }
 
-    const closeModal = () => setShow(false);
-    const openModal = () => setShow(true);
+    const saveChanges = async () => {
+
+        console.log("before save -> ", selectedRow)
+
+        let response =  await api.postItem(selectedRow);
+
+        console.log("after save -> ", response)
+        closeModal();
+    }
+
+
+    const closeModal = () => { setShow(false); }
+    const openModal = () => { setShow(true); }
     //=======================================================
 
-    const columns = [
-        {
-            title: 'Id',
-            field: 'id',
-        },
-        {
-            title: 'Name',
-            field: 'name',
-        },
-    ]
 
     useEffect(() => {
 
@@ -124,12 +127,22 @@ function MyDataTableCreateEdit() {
             <MyModal selectedRow={selectedRow}
                      show={show}
                      closeModal={closeModal}
-                     updateName={updateName}/>
+                     updateName={updateName}
+                     saveChanges={saveChanges}/>
 
             <br/> <br/>
 
             <MaterialTable
-                columns={columns}
+                columns={[
+                    {
+                        title: 'Id',
+                        field: 'id',
+                    },
+                    {
+                        title: 'Name',
+                        field: 'name',
+                    },
+                ]}
                 data={rows}
                 title="titulo"
                 actions={[
@@ -139,8 +152,8 @@ function MyDataTableCreateEdit() {
                         onClick: editRow
                     },
                     {
-                        icon: 'disable',
-                        tooltip: 'disable',
+                        icon: 'swap_horiz',
+                        tooltip: 'enable / disable',
                         onClick: disableRow
                     }
                 ]}

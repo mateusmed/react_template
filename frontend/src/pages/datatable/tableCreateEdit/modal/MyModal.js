@@ -5,11 +5,7 @@ import {Modal, Button, Form} from "react-bootstrap"
 
 function MyModal(props) {
 
-    let {selectedRow, show, closeModal, updateName} = props;
-
-    // const [row, setSelectedRow] = useState(selectedRow);
-
-
+    let {selectedRow, show, closeModal, updateName, saveChanges} = props;
 
     return (
         <>
@@ -18,6 +14,16 @@ function MyModal(props) {
                     <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+
+
+                    <Form.Group >
+                        <Form.Control style={{display: "none"}}
+                                      type="text"
+                                      onChange={updateName}
+                                      value={selectedRow.id}
+                                      placeholder="name input"/>
+                    </Form.Group>
+
                     <Form.Group >
                         <Form.Label>Name: </Form.Label>
                         <Form.Control type="text"
@@ -25,6 +31,8 @@ function MyModal(props) {
                                       value={selectedRow.name}
                                       placeholder="name input"/>
                     </Form.Group>
+
+
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary"
@@ -32,7 +40,7 @@ function MyModal(props) {
                         Close
                     </Button>
                     <Button variant="primary"
-                            onClick={closeModal}>
+                            onClick={ saveChanges }>
                         Save Changes
                     </Button>
                 </Modal.Footer>

@@ -44,9 +44,9 @@ server.post("/item", (req,
                                    res) => {
 
     let item = req.body;
-    db.saveOrUpdate(item)
+    let responseSaveOrUpdate = db.saveOrUpdate(item)
 
-    res.json(item);
+    res.json(responseSaveOrUpdate);
 });
 
 
