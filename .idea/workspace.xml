@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd885aa7-8cce-461b-bb79-baa495b06544" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/modal/MyModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/MyDataTableCreateEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/MyDataTableCreateEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/icons.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <updated>1612469662948</updated>
       <workItem from="1612469664419" duration="28567000" />
       <workItem from="1612741400047" duration="5508000" />
-      <workItem from="1612791241080" duration="23338000" />
+      <workItem from="1612791241080" duration="40148000" />
     </task>
     <servers />
   </component>

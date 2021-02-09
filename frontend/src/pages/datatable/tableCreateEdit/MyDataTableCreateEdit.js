@@ -1,41 +1,64 @@
 import React, { useState, useEffect } from 'react';
 
+import './App.css';
+
+
+import MyModal from "./modal/MyModal";
+
 import MaterialTable from "material-table";
 
-// import axios from "axios"
-import {Modal, TextField, Button} from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
-
-import './Style.css';
+import './icons.css';
 
 import Api from "../../../services/api"
+import {Button} from "react-bootstrap";
 const api = new Api();
 
 
+// informação importante para experiencia.
+// não importa quantos componentes 'filhos' vc tiver,
+// a forma mais inteligente de se fazer isso
+// é ter um centralizador dos estados e geralmente esse centralizador é o pai
+// também não concordo, uma vez q determinadas ações deveriam ser responsabilidades dos componenetes
+// aqui no nosso examplo, abrir e fechar um modal
+// o pai consegue chamar metodos dos componentes filhos,
+// POREM dizem q chamar um metodo de "filho" é uma coisa ruim,
 function MyDataTableCreateEdit() {
 
+    let defaultData = {
+        "id": "",
+        "name": ""
+    }
+
+    // TABLE
+    //=======================================================
     const [rows, setRows] = useState();
+    const [selectedRow, setSelectedRow] = useState(defaultData);
+    //=======================================================
 
-    const useStyles = makeStyles((theme) => ({
-        modal: {
-            position: 'absolute',
-            width: 400,
-            backgroundColor: theme.palette.background.paper,
-            border: '2px solid #000',
-            boxShadow: theme.shadows[5],
-            padding: theme.spacing(2, 4, 3),
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
-        },
-        iconos:{
-            cursor: 'pointer'
-        },
-        inputMaterial:{
-            width: '100%'
+
+    //MODAL
+    //=======================================================
+    const [show, setShow] = useState(false);
+
+    const updateName = (event) => {
+
+        console.log(event.target)
+
+        let value = event.target.value;
+
+        let newData = {
+            id: selectedRow.id,
+            name : value
         }
-    }));
 
+        setSelectedRow(newData);
+
+        console.log("updateName -> ", selectedRow);
+    }
+
+    const closeModal = () => setShow(false);
+    const openModal = () => setShow(true);
+    //=======================================================
 
     const columns = [
         {
@@ -71,8 +94,13 @@ function MyDataTableCreateEdit() {
 
     const editRow = (event, rowData)=>{
 
-        console.log("event ", event);
-        console.log("rowData ", rowData);
+        let selectedData = {
+            "id": rowData.id,
+            "name": rowData.name
+        }
+
+        setSelectedRow(selectedData);
+        openModal();
     }
 
     return (
@@ -80,10 +108,26 @@ function MyDataTableCreateEdit() {
         <div style={{margin: "30px"}}>
             <br />
 
-            {JSON.stringify(rows)}
-            {/*<Button onClick={ ()=>{abrirCerrarModalInsertar()} }>Insertar Artista</Button>*/}
+            {/*{JSON.stringify(rows)}*/}
+            {/*{JSON.stringify(openModal)}*/}
+
+            <div className="container">
+                <div className="row">
+                    <div className="col text-center">
+                        <Button variant="primary" onClick={openModal}>
+                            Novo Item
+                        </Button>
+                    </div>
+                </div>
+            </div>
+
+            <MyModal selectedRow={selectedRow}
+                     show={show}
+                     closeModal={closeModal}
+                     updateName={updateName}/>
 
             <br/> <br/>
+
             <MaterialTable
                 columns={columns}
                 data={rows}
@@ -109,16 +153,6 @@ function MyDataTableCreateEdit() {
                     }
                 }}
             />
-
-
-            {/* init modal */}
-            {/*<Modal open={true}*/}
-            {/*       onClose={false}>*/}
-            {/*    <div className={useStyles.modal}>*/}
-            {/*        <h1>msg </h1>*/}
-
-            {/*    </div>*/}
-            {/*</Modal>*/}
 
         </div>
     );
