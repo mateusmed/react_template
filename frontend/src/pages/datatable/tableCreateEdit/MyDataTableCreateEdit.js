@@ -66,6 +66,11 @@ function MyDataTableCreateEdit() {
 
         console.log("after save -> ", response)
         closeModal();
+
+
+        let rows = await api.getItens();
+        console.log("rows:", rows)
+        setRows(rows);
     }
 
 
