@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/database/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/MyDataTableCreateEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/MyDataTableCreateEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/modal/MyModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/datatable/tableCreateEdit/modal/MyModal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +65,10 @@
       <updated>1612469662948</updated>
       <workItem from="1612469664419" duration="28567000" />
       <workItem from="1612741400047" duration="5508000" />
-      <workItem from="1612791241080" duration="51915000" />
+      <workItem from="1612791241080" duration="55683000" />
+      <workItem from="1612996893086" duration="8131000" />
+      <workItem from="1613134455265" duration="53000" />
+      <workItem from="1613135262944" duration="46000" />
     </task>
     <servers />
   </component>

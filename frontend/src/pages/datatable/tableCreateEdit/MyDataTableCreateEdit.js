@@ -16,14 +16,6 @@ const api = new Api();
 
 // icones: https://material.io/resources/icons/?icon=check_circle_outline&style=baseline
 
-// informação importante para experiencia.
-// não importa quantos componentes 'filhos' vc tiver,
-// a forma mais inteligente de se fazer isso
-// é ter um centralizador dos estados e geralmente esse centralizador é o pai
-// também não concordo, uma vez q determinadas ações deveriam ser responsabilidades dos componenetes
-// aqui no nosso examplo, abrir e fechar um modal
-// o pai consegue chamar metodos dos componentes filhos,
-// POREM dizem q chamar um metodo de "filho" é uma coisa ruim,
 function MyDataTableCreateEdit() {
 
     let defaultData = {
@@ -149,7 +141,7 @@ function MyDataTableCreateEdit() {
                     },
                 ]}
                 data={rows}
-                title="titulo"
+                title="Israel viadinho"
                 actions={[
                     {
                         icon: 'edit',
